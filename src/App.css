@@ -1,38 +1,197 @@
-.App {
+.Expheading{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.experience-card{
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.151);
+  color: black;
   display: flex;
+  border: solid grey 1px;
   flex-direction: column;
-  align-items: center;
+  
+}
+  .experience-card:hover{
+  background-color: transparent   ;
+  cursor: pointer;
+  transition: 0.5s;}
+
+.Experience-holder{
+  margin: 30px;
+  width: 40%;
+  border-radius: 5px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: rgb(54, 54, 54);
+}
+.experience-card h3{
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.expcontainer{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 700px) {
+
+  .expcontainer{
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Experience-holder{
+      width: 70%;
   }
+}
+
+.explogo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 5;
+  }
+
+  .explist{
+      background-color: transparent;
+      
+  }
+  .explist li{
+     
+      color: rgb(209, 209, 209);
+      text-align: start;
+  }
+
+  .sectionheading {
+      font-family: 'Arial', sans-serif;
+      font-size: 3em;
+      padding: 20px;
+      color: rgb(189, 189, 189);
+      text-align: center;
+      letter-spacing: 4px;
+      position: relative;
+      
+  }
+
+  @keyframes neonGlow {
+      to {
+          text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9);
+      }
+  }
+
+  .sectionheading:hover{
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
+      animation: neonGlow 1.5s infinite alternate;
+      transition: 0.8s;
+  }
+  
+  .contact-txt,.contact-form{
+    margin: 20px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.forminput{
+    border: none;
+    padding: 10px;
+    border-bottom: solid 2px white;
+    background: rgba(182, 182, 182, 0.185); 
+    backdrop-filter: blur(10px); 
+    color:white;
+    border-bottom: soild 1px white;
+    margin: 2PX;
+}
+::placeholder {
+    color:grey;}
+
+
+textarea{
+  
+        border: none;
+        padding: 10px;
+        border-bottom: solid 2px white;
+        background: rgba(182, 182, 182, 0.195); 
+    backdrop-filter: blur(10px); 
+        color:white;
+        border-bottom: soild 1px white;
+        margin: 2PX;
+}
+.contact-txt{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: start;
+    justify-content: center;align-items: center;
+}
+.submitbtn{
+    border: solid grey 1px;
+    color: grey;
+    z-index: 1;
+}
+.submitbtn:hover{
+    border: solid grey 1px;
+}
+
+.forminput:hover{
+    background-color:rgba(246, 235, 235, 0.39);  
+    transition: 0.8s;
+}
+
+textarea:hover{
+    background-color:rgba(246, 235, 235, 0.39);  
+    transition: 0.8s;
+}
+
+#contact-span{
+    color: rgb(255, 166, 0);
+}
+@media only screen and (max-width: 700px) {
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .input .forminput{
+        
+        width: 100%;
+    }
+}
+.icon{
+    font-size: 25px;
+    margin: 10px;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.icon:hover{
+    scale: 1.25;
+    transition: 0.5s;
+}
+.footertxt{
+    font-size: .8rem;
+    text-align: center;
+    background-color: transparent;
+    color: rgba(162, 162, 162, 0.418)
+}
+.footerlink{
+    color: rgb(22, 22, 237);
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: transparent;
+}
+.footerdiv{
+    background-color: transparent;
+}
+.submit-msg{
+    color: greenyellow;
+    font-size: .8rem;
+    text-align: center;
 }
